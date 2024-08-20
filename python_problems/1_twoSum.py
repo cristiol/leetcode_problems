@@ -34,12 +34,9 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 """
 
 
+# this is the solution O(n)
 def twoSum(nums, target):
 
-    # for i in range(len(nums)):
-    #     for j in range(len(nums)):
-    #         if i != j and nums[i] + nums[j] == target:
-    #             return [i,j]
     prev = {}
 
     for i, n in enumerate(nums):
