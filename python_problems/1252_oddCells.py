@@ -28,3 +28,6 @@ def oddCells(m, n, indices):
     return odd_sum
 
 #print(oddCells(2,3,[[0,1],[1,1]]))
+
+
+
