@@ -58,3 +58,7 @@ def removeElement(nums, val):
     return j, nums
 
 print(removeElement([3,2,2,3], 3))
+
+
+
+
