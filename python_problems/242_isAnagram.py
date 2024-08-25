@@ -21,9 +21,14 @@ Constraints:
 s and t consist of lowercase English letters.
 
 """
+from collections import Counter
 
 
 def isAnagram(s,t):
+
+    #return sorted(s) == sorted(t) O(nlogn)
+    
+    #return Counter(s) == Counter(t) solution using Counter
 
     if len(s) != len(t):
         return False
