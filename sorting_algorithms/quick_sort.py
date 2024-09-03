@@ -1,4 +1,3 @@
-from turtledemo.sorting_animate import partition
 
 
 def quick_sort(arr, left, right):
@@ -28,3 +27,4 @@ def partition_(arr, left, right):
 arr_test = [2,1,8,6,5,7,3,4]
 quick_sort(arr_test, 0, len(arr_test)-1)
 print(arr_test)
+
