@@ -38,7 +38,7 @@ def characterReplacement(s, k):
         count[s[r]] = 1 + count.get(s[r], 0)
         max_f = max(max_f, count[s[r]])
 
-        if (r - l +1) - max_f > k:
+        if (r - l + 1) - max_f > k:
             count[s[l]] -= 1
             l += 1
 
