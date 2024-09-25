@@ -32,7 +32,7 @@ def minWindow(s, t):
     window, t_cnt = {}, Counter(t)
     res = [-1, -1]
     res_len = float('inf')
-    have, need = 0, len(t)
+    have, need = 0, len(t_cnt)
     l = 0
 
     for r in range(len(s)):
@@ -54,4 +54,6 @@ def minWindow(s, t):
     l, r = res
     return s[l:r + 1] if res_len != float('inf') else ''
 
-print(minWindow('ADOBECODEBANC', 'ABC'))
+#print(minWindow('ADOBECODEBANC', 'ABC'))
+print(minWindow('aa', 'aa'))
+
