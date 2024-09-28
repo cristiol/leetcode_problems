@@ -91,6 +91,6 @@ solution = Solution()
 
 l1 = list_to_linkedlist([1,2,4])
 l2 = list_to_linkedlist([1,3,4])
-reversed_list = solution.mergeTwoLists(l1,l2)
+reversed_list = solution.mergeTwoLists(l1, l2)
 print(linkedlist_to_list(reversed_list))
 
