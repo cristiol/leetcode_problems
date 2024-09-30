@@ -28,7 +28,6 @@ The number of nodes in both lists is in the range [0, 50].
 -100 <= Node.val <= 100
 Both list1 and list2 are sorted in non-decreasing order.
 """
-from pickle import dumps
 
 
 # Definition for singly-linked list.
@@ -45,10 +44,8 @@ class Solution:
     def mergeTwoLists(self, l1, l2):
         dummy = ListNode()
         tail = dummy
-        print(dummy, tail)
 
         while l1 and l2:
-            print('l1', l1, 'l2', l2)
             if l1.val < l2.val:
                 tail.next = l1
                 l1 = l1.next
