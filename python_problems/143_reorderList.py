@@ -47,6 +47,7 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
+        # find the middle
         slow, fast = head, head.next
         while fast and fast.next:
             slow = slow.next
@@ -55,20 +56,20 @@ class Solution:
         second = slow.next
         prev = slow.next = None
 
+        # reverse second half
         while second:
             tmp = second.next
             second.next = prev
             prev = second
             second = tmp
 
+        # merge thw two halves
         first, second = head, prev
         while second:
             tmp1, tmp2 = first.next, second.next
             first.next = second
             second.next = tmp1
-            first = tmp1
-            second = tmp2
-
+            first, second = tmp1, tmp2
 
 
 # Helper function to convert a list to a linked list
