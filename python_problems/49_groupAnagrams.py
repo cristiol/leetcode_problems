@@ -44,10 +44,9 @@ def groupAnagrams(strs):
             d[s].extend([i])
         else:
             d[s] = [i]
-
     return list(d.values())
 
-#print(groupAnagrams([""]))
+#print(groupAnagrams(["eat","tea","tan","ate","nat","bat"]))
 
 
 def groupAnagrams_(strs):
@@ -64,7 +63,8 @@ def groupAnagrams_(strs):
             count[ord(c) - ord('a')] += 1
         res[tuple(count)].append(s)
 
-    return res.values()
+    return list(res.values())
+
 
 print(groupAnagrams_(["eat","tea","tan","ate","nat","bat"]))
 
