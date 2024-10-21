@@ -58,7 +58,7 @@ class Solution:
 
         return dummy.next
 
-            
+
 # Helper function to convert a list to a linked list
 def list_to_linkedlist(lst):
     if not lst:
@@ -78,9 +78,6 @@ def linkedlist_to_list(node):
         result.append(node.val)
         node = node.next
     return result
-
-
-
 
 
 solution = Solution()
